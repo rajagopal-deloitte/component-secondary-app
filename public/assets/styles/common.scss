@@ -1,0 +1,60 @@
+@font-face{
+    font-family:'montserratRegular';
+    src:url('/assets/fonts/Montserrat-Regular.ttf') format('truetype');
+   
+}
+
+@font-face{
+    font-family:'montserratSemibold';
+    src:url('/assets/fonts/Montserrat-SemiBold.ttf') format('truetype');
+}
+
+@font-face{
+    font-family:'montserratBold';
+    src:url('/assets/fonts/Montserrat-Bold.ttf') format('truetype');
+}
+@font-face{
+    font-family:'montserratMedium';
+    src:url('/assets/fonts/Montserrat-Medium.ttf') format('truetype');
+}
+
+@font-face{
+    font-family:'robotCondBold';
+    src:url('/assets/fonts/RobotoCondensed-Bold.ttf') format('truetype');
+}
+
+@mixin font($family: $montRegular, $weight: normal, $size: 1em, $color: $black-color) {
+    font-family: $family;
+    font-weight: $weight;
+    font-size: $size;
+    color:$color;
+  
+}
+
+
+$montRegular:'montserratRegular', sans-serif;
+$montSemiBold:'montserratSemibold',sans-serif;
+$montBold:'montserratBold',sans-serif;
+$montMedium:'montserratMedium';
+$robotCondBold:'robotCondBold', sans-serif;
+
+.content{
+    height: calc(100vh - 50px);
+    overflow:auto; 
+}
+.no-image{
+    background-image:url('/assets/images/download.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.default-input{
+    border: none;
+    outline: none;
+    background: transparent;
+}
+a{
+    color:inherit;
+    &:active,&:hover{
+        text-decoration: none;
+    }
+}
